@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function laranja () {
+        $Usuario_f = this.LOGIN.fUsuario.value
+        $Usuario = "Barril"
+        $Senha = "Laranja"
+        $Senha_f = this.LOGIN.fSenha.value
+        if ($Usuario_f !== $Usuario){
+            alert ("Usuário ou senha inválido")
+            return false
+        }
+        if ($Senha_f !== $Senha){
+            alert ("Usuário ou senha inválido")
+            return false
+        }
+        if ($Usuario_f == $Usuario && $Senha_f == $Senha){
+        document.write("<a href='Sites/Pagina1.html'> <center> <font size='7'> Entrar </font> </center> </a>")
+        }
+    }
+</script></head>
+<body>
+    <center>
+    <table border="1"><td><center><img src="Img/logo.png" width="50%"><br><font size="5" color="green">Viva Verde</font>
+        <form name="LOGIN" action="" method="post" onsubmit="return laranja ()">
+            Usuário: <br><input type="text" name="fUsuario"><br>
+            Senha: <br><input type="password" name="fSenha"><br> <br>
+            <input type="submit" value="Entrar">
+        </form>
+    </center>
+    </td>
+    </table></center>
+</body>
+</html>
